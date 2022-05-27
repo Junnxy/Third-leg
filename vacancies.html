@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content+"with-device-width, initial-scale=1.0">
+	<title>Hot Beans</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="Images/LogoTransparent.png"></a>
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="vacancies.html">VACANCIES</a></li>
+					<li><a href="profiles.html">PROFILES</a></li>
+					<li><a href="apply.html">APPLY</a></li>
+					<li><a href="links.html">LINKS</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+<button class="accordion">Front End Developer</button>
+<div class="panel">
+  <p id=tcolor>For this job your primary focus will be on the design of websites. You will work with other team members to design beautiful websites that meet all requirements of the client.</p>
+</div>
+
+<button class="accordion">Back End Developer</button>
+<div class="panel">
+  <p id=tcolor>For this job you will be managing the transfer of data between the server and the user. You will mainly work on maintenance of the central database to ensure high performance and responsive requests from the front end.</p>
+</div>
+
+<button class="accordion">Graphics Designer</button>
+<div class="panel">
+  <p id=tcolor>Graphics Designer</p>
+</div>
+
+<button class="accordion">Trainee Web Developer</button>
+<div class="panel">
+  <p id=tcolor>Trainee Web Developer</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+	
+	</section>
+
+</body>
+</html>
